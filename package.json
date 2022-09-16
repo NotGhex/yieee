@@ -11,7 +11,7 @@
     "build": "yarn run clean && npx tsc",
     "test": "yarn run build && yarn run start",
     "start": "npx electron ./bin/",
-    "package": "yarn run build && npx rimraf dist && npx electron-builder --x64 true --linux AppImage --windows msi"
+    "package": "yarn run build && npx rimraf dist && npx electron-builder --x64 true --linux AppImage --windows nsis"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",
