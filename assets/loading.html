@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/base.css">
+    <title>Lowding...</title>
+    <style>
+        body {
+            background: url('./img/boobie.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+
+        .center {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .center h1 {
+            font-size: 2rem;
+            color: #000;
+            position: relative;
+            z-index: 1;
+        }
+
+        .center h1::after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.2);
+            background-color: #fff;
+            filter: blur(40px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Please Wait UwU 🥺</h1>
+    </div>
+</body>
+</html>

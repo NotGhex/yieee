@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/base.css">
+    <script>var exports = {};</script>
+    <title>Hi, UwU</title>
+    <style>
+        body {
+            background: url('../assets/img/background.gif');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #000;
+        }
+
+        .center {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .answers {
+            display: flex;
+            margin-top: 4rem;
+            flex-direction: column;
+        }
+
+        .answers button,
+        .fake-no {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 0px;
+            font-family: comic;
+            font-size: 1.3rem;
+            background-color: #000;
+            border-radius: 5px;
+            border: 2px solid currentColor;
+            color: #fff;
+        }
+
+        .answers button:hover,
+        .answers button:focus-visible,
+        .fake-no:hover,
+        .fake-no:focus-visible  {
+            background-color: #fff;
+            color: #000;
+            outline: none;
+        }
+
+        .fake-no {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 10;
+            z-index: 2;
+        }
+
+        .objects > * {
+            z-index: -1;
+            position: fixed;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="form">
+            <div class="question">
+                <h1>Do you like me?</h1>
+            </div>
+            <div class="answers">
+                <button class="yes-uwu">Yes 💕</button>
+                <button class="no-tf original-no">No 😡</button>
+            </div>
+        </div>
+        <div class="objects">
+            <img src="./img/uwu.gif" alt="" class="hidden">
+            <img src="./img/please.gif" alt="" class="hidden">
+            <img src="./img/plis.gif" alt="" class="hidden">
+            <img src="./img/sed.gif" alt="" class="hidden">
+            <img src="./img/rainonme.gif" alt="" class="hidden">
+            <img src="./img/owo.gif" alt="" class="hidden">
+        </div>
+    </div>
+    <button class="no-tf fake-no hidden">No 😡</button>
+    <script src="../dist/script/index.js"></script>
+</body>
+</html>

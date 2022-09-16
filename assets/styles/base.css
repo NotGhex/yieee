@@ -1,0 +1,30 @@
+@font-face {
+    font-family: comic;
+    src: url('../fonts/COMIC.TTF');
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: comic;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}

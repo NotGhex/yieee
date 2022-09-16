@@ -1,0 +1,17 @@
+{
+  "name": "yiee-uwu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "npx rimraf dist",
+    "build": "yarn run clean && npx tsc",
+    "test": "yarn run build && yarn run start",
+    "start": "npx electron ./dist/"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "electron": "^20.1.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
+  }
+}
