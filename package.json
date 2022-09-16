@@ -2,6 +2,7 @@
   "name": "yiee-uwu",
   "displayName": "UwU App",
   "main": "./bin/index.js",
+  "author": "NotGhex",
   "version": "1.0.0",
   "private": true,
   "icon": "./assets/icons/icon.png",
@@ -10,7 +11,7 @@
     "build": "yarn run clean && npx tsc",
     "test": "yarn run build && yarn run start",
     "start": "npx electron ./bin/",
-    "package": "yarn run build && npx rimraf dist && npx electron-builder --x64 true --linux AppImage --windows nsis"
+    "package": "yarn run build && npx rimraf dist && npx electron-builder --x64 true --linux AppImage --windows msi"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",
