@@ -48,7 +48,6 @@ app.on('ready', async () => {
         window.destroy();
         yesWindow.show();
         yesWindow.maximize();
-        yesWindow.webContents.openDevTools();
     });
 
     ipcMain.on('close', app.quit);
